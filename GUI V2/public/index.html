@@ -1,0 +1,61 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+
+    <meta charset="utf-8">
+    <title>Shop</title>
+
+
+    <!-- Angular dependencies-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/united.bootswatch.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- OTHER-->
+    <link rel="stylesheet" type="text/css" href="bower_components/sweetalert/dist/sweetalert.css">
+    <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+<!-- App -->
+<script src="angular/app.js"></script>
+<script src="angular/shared/services/api.service.js"></script>
+<script src="angular/shared/directives/sweet-alert/swal.service.js"></script>
+<script src="angular/pages/main/main.controller.js"></script>
+<script src="angular/pages/checkout/checkout.controller.js"></script>
+<script src="angular/pages/register-login/register-login.controller.js"></script>
+<script src="angular/pages/dashboard/dashboard-view/dasboard-view.controller.js"></script>
+<script src="angular/pages/dashboard/orders/orders.controller.js"></script>
+<script src="angular/pages/dashboard/comments/comments.controller.js"></script>
+<script src="angular/pages/restaurant-preview/restaurant-preview.controller.js"></script>
+
+<script src="angular/shared/directives/navbar/navbar.directive.js"></script>
+<script src="angular/shared/directives/product/product.directive.js"></script>
+
+<script src="angular/pages/register-login/register-login.route.js"></script>
+<script src="angular/shared/services/UserStore.service.js"></script>
+<script src="angular/shared/services/ShoppingCart.service.js"></script>
+
+
+<!-- End Angular -->
+
+
+
+<div ui-view></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<style>
+    .comments {
+        list-style: none;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px 40px;
+    }
+    .comments .comment {
+        margin-bottom: 20px;
+        padding-top: 20px;
+        border-top: 1px solid white;
+    }
+    .comments .comment__author h3 {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: white;
+    }
+    .comments .comment__text p {
+        font-style: italic;
+        color: white;
+    }
+
+
+</style>
+<div style="text-align: center;" class="row">
+    <h2 style="color: white;">Comments</h2>
+</div>
+<ul class="comments">
+    <li class="comment">
+        <div ng-repeat="comentario in Comments.restaurant.comments track by $index" class="comment__text">
+            <div class="well">
+                <h2>{{comentario}}</h2>
+            </div>
+        </div>
+    </li>
+</ul>
